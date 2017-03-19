@@ -1,4 +1,4 @@
-# !/usr/env python
+﻿# !/usr/env python
 # coding:utf-8
 
 from wxpy import *
@@ -9,7 +9,7 @@ from controler import controler
 from at_me import at_me
 
 bot = Bot(cache_path=True)
-host = bot.friends().search("小池蜂")[0]
+host = bot.friends().search("大号")[0]
 tuling = Tuling(api_key="0480791e014245bb92174577c11a779f")
 except_group = bot.groups().search('wxpy 交流群')[0]
 
@@ -59,7 +59,7 @@ def auto_reply(msg):
             elif msg.sender.name == "小冰":
                 return None
 
-            elif msg.sender.name == "小池蜂":
+            elif msg.sender.name == "mainUser":
                 if u'发信息' in msg.text:
                     mes = str(msg.text).split(" ")
                     # 格式：发信息 id mes
