@@ -30,9 +30,11 @@ class controler(object):
         if self.msg_order in opened:
             with open(r".\cache\{}.txt".format(self.path), 'w', encoding='utf-8') as f:
                 f.write("1")
+                print(self.path+"机器人服务开启")
         elif self.msg_order in closed:
             with open(r".\cache\{}.txt".format(self.path), 'w', encoding='utf-8') as f:
                 f.write("0")
+                print(self.path+'机器人服务关闭')
         else:
             with open(r".\cache\{}.txt".format(self.path), 'w', encoding='utf-8') as f:
                 f.write("0")
